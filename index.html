@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uñas hermosas - kiarunails</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #F8B4C0; 
+            --secondary-color: #FFF0F5; 
+            --text-color: #333;
+            --font-main: 'Montserrat', sans-serif;
+            --font-secondary: 'Playfair Display', serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: var(--font-secondary);
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: url('https://via.placeholder.com/1200x600.png?text=Imagen+principal+atractiva') no-repeat center center/cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            font-family: var(--font-secondary);
+        }
+
+        .services-grid, .gallery-grid {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .services-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .gallery-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .service-card, .gallery-item {
+            background: var(--secondary-color);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        .gallery-item p {
+            font-style: italic;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .cta .btn {
+            background: white;
+            color: var(--primary-color);
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta .btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div> 
+            <img src="logo.png" alt="Logo de Kiaruu Nails" class="logo">
+        </div>
+        <h1>Kiaru.nails</h1>
+        <p>Expertas en belleza y cuidado de uñas</p>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Uñas perfectas para cada ocasión.</h2>
+                <p>Descubre el arte en tus manos con nuestros diseños semipermanentes, kapping y soft gel.</p>
+            </div>
+        </section>
+        
+        <section id="services" class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Diseño Semipermanente</h3>
+                    <p>Colores vibrantes y duraderos que se mantienen impecables hasta por 21 días. Elige entre una amplia gama de tonos y acabados.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Kapping</h3>
+                    <p>Fortalece tus uñas naturales con una capa protectora de gel o acrílico. Ideal para uñas débiles, las protege y permite que crezcan sanas.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Soft Gel</h3>
+                    <p>Para un largo extra sin dañar tu uña natural. Las extensiones de soft gel son ligeras, flexibles y con un acabado ultrabrillante. ¡Elige el largo y la forma que más te guste!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="container">
+            <h2>Nuestra Galería</h2>
+            <p style="text-align: center;">Inspírate con algunos de nuestros trabajos más recientes. <br>¡Aquí la belleza se hace arte!</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="semipermanente.jpg" alt="Manicura semipermanente con diseño">
+                    <p>Manicura semipermanente </p>
+                </div>
+                <div class="gallery-item">
+                    <img src= "kapping.jpg" alt="Kapping de gel">
+                    <p>Kapping con diseño de cebra</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="soft gel 3.png" alt="Uñas soft gel largas">
+                    <p>Uñas soft gel .</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="semipermanente (2).jpg" alt="Diseño semipermanente abstracto">
+                    <p>Diseño abstracto en tonos pastel sobre semipermanente.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="kapping 3.jpg" alt="Uñas con kapping y decoración">
+                    <p>Uñas cortas y fuertes con kapping </p>
+                </div>
+                <div class="gallery-item">
+                    <img src="soft gel 2.png" alt="Uñas soft gel con brillo">
+                    <p>Extensiones de soft gel con acabado de brillo .</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>¿Lista para transformar tus manos?</h2>
+                <p>Agenda tu cita y déjate consentir por nuestras expertas.</p>
+                <a href="#" class="btn">¡Agendar ahora!</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <div class="contact-info">
+            <p><strong>Contáctanos:</strong></p>
+            <p><a href="tel:+54 3521-415306">Teléfono: +54 3521-415306</a></p>
+            <p><a href="https://wa.me/543521415306" target="_blank">WhatsApp</a> | <a href="https://instagram.com/kiaruu_ok12" target="_blank">Instagram</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
